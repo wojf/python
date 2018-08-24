@@ -56,7 +56,7 @@ class Book:
 
 class DerivedBook(Book):
 
-    def __init__(self, title):
+    def __init__(self, title: str):
         Book.__init__(self,title)
         self.author = ''
         logger.info('Creating an instance of DerivedBook class, book\'s title: ' + self.title)
