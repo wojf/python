@@ -65,3 +65,8 @@ def test_DerivedBook_SetAuthor_requiredAuthorIsSet_ut():
     book = DerivedBook('Book - Test12')
     book.set_author('Ian Fleming')
     assert book.author == 'Ian Fleming'
+
+
+def test_DerivedBook_isInstanceOfBook_returnTrue_ut():
+    book = DerivedBook('Book - Test13')
+    assert isinstance(book,Book)
